@@ -61,11 +61,11 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Download IPA artifact
-        uses: actions/download-artifact@v2
+        uses: actions/download-artifact@v4.1.7
         with:
           name: artifact-ipa
       - name: Download RELEASE notes artifact
-        uses: actions/download-artifact@v2
+        uses: actions/download-artifact@v4.1.7
         with:
           name: artifact-release-notes
       - run: ls -l .
